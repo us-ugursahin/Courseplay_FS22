@@ -206,7 +206,7 @@
     <text name="CP_vehicle_setting_fullThreshold_title" text="Dolunca boşalt:"/>
     <text name="CP_vehicle_setting_fullThreshold_tooltip" text="Boşaltıcının depo seviyesi bu değerin üzerindeyse, biçerdöveri beklemez."/>
     <text name="CP_vehicle_setting_useAdditiveFillUnit_title" text="Silaj katkısı olup olmadığını kontrol edin."/>
-    <text name="CP_vehicle_setting_useAdditiveFillUnit_tooltip" text="Aktifse ve silaj katkı deposu boş ise, sürücü duracaktır."/>
+    <text name="CP_vehicle_setting_useAdditiveFillUnit_tooltip" text="Aktifse ve silaj katkı deposu boş ise, yardımcı işi durdurur."/>
     <text name="CP_vehicle_setting_symmetricLaneChange_title" text="Simetrik hat değişimi"/>
     <text name="CP_vehicle_setting_symmetricLaneChange_tooltip" text="Simetrik hat değişimi"/>
     <text name="CP_vehicle_setting_convoyDistance_title" text="Konvoy Mesafesi"/>
@@ -360,20 +360,20 @@
     <!---->
     <text name="CP_global_setting_title" text="Global Ayarlar"/>
     <text name="CP_global_setting_subTitle_general" text="Temel ayarlar"/>
-    <text name="CP_global_setting_wageModifier_title" text="CP sürücü maaşları"/>
-    <text name="CP_global_setting_wageModifier_tooltip" text="Normal işçi ücretlerine oranla belirlenecek CP sürücü ücretleri."/>
+    <text name="CP_global_setting_wageModifier_title" text="CP şoför maaşları"/>
+    <text name="CP_global_setting_wageModifier_tooltip" text="Normal işçi ücretlerine oranla belirlenecek CP şoför ücretleri."/>
     <text name="CP_global_setting_autoRepair_title" text="Otomatik tamirat"/>
-    <text name="CP_global_setting_autoRepair_tooltip" text="CP sürücüsünün sürüş sırasında araçları otomatik olarak onarıp onarmayacağı"/>
+    <text name="CP_global_setting_autoRepair_tooltip" text="CP şoförlerinin sürüş sırasında araçları otomatik olarak onarıp onarmayacağı"/>
     <text name="CP_global_setting_autoRepair_off" text="Tamir etme"/>
     <text name="CP_global_setting_autoRepair_less_than_25" text="&lt; 25%"/>
     <text name="CP_global_setting_autoRepair_less_than_70" text="&lt; 70%"/>
     <text name="CP_global_setting_autoRepair_always" text="Sürekli sağlam tut"/>
     <text name="CP_global_setting_fuelThreshold_title" text="Yakıt eşiği"/>
-    <text name="CP_global_setting_fuelThreshold_tooltip" text="Yakıt yüzdesi daha az ise sürücü işi bırakacaktır."/>
+    <text name="CP_global_setting_fuelThreshold_tooltip" text="Yakıt yüzdesi daha az ise şoför işi bırakacaktır."/>
     <text name="CP_global_setting_waitForRefueling_title" text="Yakıt ikmali için bekleme"/>
-    <text name="CP_global_setting_waitForRefueling_tooltip" text="Sürücü yakıt ikmali yapılana kadar bekler."/>
+    <text name="CP_global_setting_waitForRefueling_tooltip" text="Şoför yakıt ikmali yapılana kadar bekler."/>
     <text name="CP_global_setting_brokenThreshold_title" text="Bozulma eşiği"/>
-    <text name="CP_global_setting_brokenThreshold_tooltip" text="Araç veya bir ekipman daha fazla bozulursa sürücü işi bırakır. (%100 kapalı)."/>
+    <text name="CP_global_setting_brokenThreshold_tooltip" text="Araç veya bir ekipman daha fazla bozulursa şoför işi bırakır. (%100 kapalı)."/>
     <text name="CP_global_setting_stopThreshingDuringRain_title" text="Yağmur sırasında hasatı durdur"/>
     <text name="CP_global_setting_stopThreshingDuringRain_tooltip" text="Ayar etkinse, tüm biçerdöverler yağmurun durmasını bekleyecektir."/>
     <text name="CP_global_setting_fruitDestruction_title" text="YZ İşçi ekin tahribatı"/>
@@ -432,7 +432,7 @@
     <text name="CP_courseManager_folder_dialog" text="Klasör adı:"/>
     <text name="CP_courseManager_course_dialog" text="Rota adı:"/>
     <text name="CP_courseManager_deleteWarning" text="Silmek istediğinizden emin misiniz - (%s)?"/>
-    <text name="CP_courseManager_editCourseWarning" text="Rota düzenleme, rota sürücüleri için sorun yaratabilir.
+    <text name="CP_courseManager_editCourseWarning" text="Rota düzenlemek, rota şoförleri için sorun yaratabilir.
 Bu aracı yalnızca rota oluşturucu yeterince iyi bir rota oluşturamadığında kullanmalısınız.
 Düzenleyici kapatıldığında rota otomatik olarak kaydedilir ve önceki rotayı geçersiz kılar.
 "/>
@@ -535,7 +535,7 @@ Courseplay, tarla rotaları oluşturmak için çeşitli ek özellikler sunar; ö
 Ayrıca balya makineleri ve yem vagonlarının, daha önce çim biçme makinesi veya biçerdöver tarafından kullanılan aynı rotada çalıştırılmasına olanak tanır. 
 Bir diğer önemli özellik, tarladaki balyaların toplanması veya sarılmasıdır.
 Courseplay ile pirinç tarlalarında ve bağlarda da çalışılabilir.
-Tarla rotaları, bir konvoyda birlikte çalışan 5 sürücüye kadar kullanım imkanı sağlayan çoklu araç modu ile de kullanılabilir.
+Tarla rotaları, bir konvoyda birlikte çalışan 5 şoföre kadar kullanım imkanı sağlayan çoklu araç modu ile de kullanılabilir.
 Ayrıca biçerdöverin, tarlada veya tarlanın yakınında bulunan bir römorka otomatik olarak boşaltma yapmasını da mümkün kılar.
 Çayır gibi normal bir tarla olarak algılanmayan alanlarda Courseplay'in kullanılabilmesi için özel çalışma alanı sınırları oluşturulabilir.
 Courseplay'de AutoDrive modu için bir arayüz bulunur. Böylece ekim makinelerinin yakın bir silodan doldurulması veya bir yem vagonunun boşaltılması gibi işlemleri mümkün kılar.
@@ -576,8 +576,8 @@ Tarla konumu doğru bir şekilde yerleştirildiğinde, haritada tarla sınırlar
 CP: Tarla çalışması işi oluşturuyorsanız, rota oluşturucu ayarlarına erişim sağlayacaksınız. 
 "/>
     <text name="CP_help_page_JobMenuExtras_text" text="
-Artık sürücüyü doğrudan menüden başlatmak mümkün. GIANTS işçisi hedef konuma gider ve orada CP işi otomatik olarak devralır.
-Alternatif olarak, araçla tarlaya yakınsanız veya AutoDrive modunu kullanarak tarlaya yakın bir noktaya gidiyorsanız, sürücüyü direkt arayüz üzerinden de başlatabilirsiniz.
+Artık şoförü doğrudan menüden başlatmak mümkün. GIANTS işçisi hedef konuma gider ve orada CP işi otomatik olarak devralır.
+Alternatif olarak, araçla tarlaya yakınsanız veya AutoDrive modunu kullanarak tarlaya yakın bir noktaya gidiyorsanız, şoförü direkt arayüz üzerinden de başlatabilirsiniz.
 "/>
     <text name="CP_help_page_courseGeneratorBasic_title" text="Rota Oluşturucu Temelleri"/>
     <text name="CP_help_page_courseGeneratorBase_text" text="
@@ -659,7 +659,7 @@ sınırına çok yakın olduğu durumlarda oluşturucu daha az koridor oluşturm
     <text name="CP_help_page_courseGeneratorIslandFunctions_text" text="
 - Ada Çevreleme: Adanın çevresinden geçiş yapılıp yapılmayacağını belirler. Eğer bir ada bulunursa bu ayar aktif olur. Ancak, bu seçenek özel olarak tanımlanmış tarlalar için geçerli değildir!
 - Ada Koridorları: Adanın etrafında kaç tur atılacağını, genel manevra koridoru ayarından bağımsız olarak belirlemenizi sağlar.
-- Ada Koridorları Yönü: Sürücünün adanın etrafında hangi yönde hareket edeceğini belirler, böylece yön değişiklikleri karmaşık hale gelmez. Bu ayar tarlanın yapısına ve rotanın geri kalanına bağlı olarak dikkatlice ayarlanmalıdır.
+- Ada Koridorları Yönü: Şoförün adanın etrafında hangi yönde hareket edeceğini belirler, böylece yön değişiklikleri karmaşık hale gelmez. Bu ayar tarlanın yapısına ve rotanın geri kalanına bağlı olarak dikkatlice ayarlanmalıdır.
 "/>
     <text name="CP_help_page_courseGeneratorExpert_text" text="
 Bazı ayarlar, yalnızca genel Courseplay ayarlarında uzman modu etkinleştirildiğinde görünür.
@@ -785,7 +785,7 @@ Aynı alanda 5 araca kadar birlikte çalışılması mümkündür ('çoklu araç
 Grup içerisindeki aracın konumunu(hattını) HUD üzerinde (sol-orta-sağ) değiştirebilirsiniz.
 "/>
     <text name="CP_help_page_multitoolFunction_text" text="
-Çoklu araç rotası yüklendikten sonra, sürücü için konum(hat) seçmeniz gerekecek.
+Çoklu araç rotası yüklendikten sonra, şoför için konum(hat) seçmeniz gerekecek.
 Bu hatlar her zaman şu şekilde adlandırılır:
 sol(2), sol(1), orta, sağ(1), sağ(2).
 2 araçlı rotada sol(1) ve sağ(1), 4 araçlı rotada ekstra sol(2) and sağ(2) seçenekleri vardır.
@@ -794,7 +794,7 @@ Farklı bir hat seçmek, rotayı o araç için güncelleyerek geçerli rotayı g
 "/>
     <text name="CP_help_page_convoyBasic_text" text="
 Konvoy yalnızca, araçlar aynı adı taşıyan aynı çoklu araç rotasına sahip olduğunda çalışır.
-Sürücüler otomatik olarak öndeki araçla aralarında ufak bir mesafe bırakacaklardır.
+Şoförler otomatik olarak öndeki araçla aralarında ufak bir mesafe bırakacaklardır.
 Ayrıca konvoy özelliği, örneğin bir balya makinesi aynı rotada bir biçerdöverin arkasında çalıştığı gibi durumlarda da kullanılabilir.
 "/>
     <text name="CP_help_page_convoyFunction_text" text="
@@ -807,8 +807,8 @@ Balya sarmak ve toplamak iki farklı şekilde yapılabilir.
 İlk yöntem, balya makineniz için kullandığınız aynı rotayı sarıcı veya toplayıcıya yükleyip aynı rotayı takip etmesini sağlamaktır.
 Ancak bazı balyalar yuvarlanmayı veya yoldan çıkmayı sevdiğinden biraz zorlayıcı olabilir.
 Bu gibi durumlardan dolayı sarma ve toplama iş tipi bir rotaya ihtiyaç duymadığı için faydalı olabilir.
-HUD üzerindeki hedef simgesi ile balyaları toplamak veya sarmak istediğiniz tarlayı seçmeniz gerekir. Ardından sürücüyü tarlaya yakın bir yerden başlatabilirsiniz.
-Ayrıca işi başlatmak için YZ Haritası'nı kullanarak sürücüyü tarlaya gönderebilirsiniz.
+HUD üzerindeki hedef simgesi ile balyaları toplamak veya sarmak istediğiniz tarlayı seçmeniz gerekir. Ardından şoförü tarlaya yakın bir yerden başlatabilirsiniz.
+Ayrıca işi başlatmak için YZ Haritası'nı kullanarak şoförü tarlaya gönderebilirsiniz.
 HUD üzerindeki sayaç, son taramadan bu yana tarlada kalan balyaları gösterir. CP, donanım performansından tasarruf etmek için gerçekten gerekli durumlarda balya taraması yapar.
 "/>
     <text name="CP_help_page_wrapBasic_text" text="
@@ -834,7 +834,7 @@ Bu biraz kafa karıştırıcı olabilir, o yüzden aşağıdaki iki örneğe bak
 "/>
     <text name="CP_help_page_symetricLaneChangeExampleOff_text" text="
 Eğer hat değiştirme kapalıysa, araç tüm rota boyunca başladığı tarafta kalır.
-En sol tarafta başladıysa, hep en sol tarafta devam eder. Diğer sürücülerle çarpışma önlenir,
+En sol tarafta başladıysa, hep en sol tarafta devam eder. Diğer şoförlerle çarpışma önlenir,
 ancak iç tarafta kalan araçlar daha dar dönüş yapmak zorunda kalır.(sola dönüşlerde en soldaki, sağa dönüşlerde en sağdaki)
 
 "/>
@@ -920,7 +920,7 @@ Yüklü rotalar, editör kapatıldığında otomatik olarak kaydedilecek ve üze
    Bu işlem yalnızca kaydedilen rotalar için kullanılabilir. Araçta herhangi bir rota yüklü olmadığına emin olun.
 
 Rota düzenleme işlevi yalnızca rota oluşturucu yeterince iyi bir rota oluşturamadığında kullanılmalıdır.
-Yanlış düzenlemeler yol noktalarının gizli özelliklere sahip olması nedeniyle sürücü için sorunlara yol açabilir.
+Yanlış düzenlemeler yol noktalarının gizli özelliklere sahip olması nedeniyle şoför için sorunlara yol açabilir.
 "/>
     <text name="CP_help_page_editorBasic_text" text="
 Temel kategorisi altında şunlar bulunmaktadır:
@@ -949,7 +949,7 @@ Bir biçerdöveri boşaltmak için normal bir römork veya burgu vagonu kullanab
 Römorkları boşaltmak için varsayılan GIANTS işçilerini veya AutoDrive'ı kullanabilirsiniz.
 Boşaltıcıyı başlatmak için birkaç şey gereklidir:
 - Tek bir römork veya burgu vagonunun takılı olması gerekir. Birden fazla römork desteklenmez.
-- Hasat edilen tarlayı seçmek için HUD üzerindeki Hedef simgesini kullanın. Boşaltıcı, o alanda çalışan tüm Courseplay sürücülü hasat makinelerini boşaltacaktır.
+- Hasat edilen tarlayı seçmek için HUD üzerindeki Hedef simgesini kullanın. Boşaltıcı, o alanda çalışan tüm Courseplay şoförlü hasat makinelerini boşaltacaktır.
 - Boşaltıcıyı başlatabilmek için tarlada ya da tarlanın 20 metre yakınında olmalısınız.
 
 Boşaltıcıların değiştirebileceğiniz yalnızca birkaç ayarı vardır::
@@ -997,7 +997,7 @@ Siperli silolarda, mısır koçanını silonun dibine doğru itmek için bir bı
     <text name="CP_help_page_bunkerBasic_text" text="
 Eğer araca bir düzleştirme ya da bıçak eklentisi takılıysa, silo modu seçili olur. Üzerinde yalnızca bir ağırlık veya silindir takılıyken
 mod görünene kadar modlar arasında geçiş yaparsınız.
-Çalışma genişliğinin yanı sıra, sürücünün siloya hangi yönden gireceğini de seçebilirsiniz. 
+Çalışma genişliğinin yanı sıra, şoförün siloya hangi yönden gireceğini de seçebilirsiniz. 
 Eğer bıçak eklentisi takılıysa, bu yön otomatik olarak belirlenir..
 YZ Haritası üzerinde siloyu seçmek için HUD üzerindeki hedef simgesini kullanabilirsiniz. Silo, mavi çizgilerle gösterilir ve seçildiğinde beyaz renkle yanar.
 Park konumu, 'park konumu' işareti ile belirlenir. Bu işaret asıl işe başlamadan önce, aracın GIANTS işçisiyle park konumuna gönderilmesi için de kullanılabilir.
@@ -1009,7 +1009,7 @@ Bu modu Ropa Maus ya da benzeri bir araç ile tarladaki ya da tarla yakınında 
 Ayrıca bunker silosundan yükleme yapmak da mümkündür.
 
 Eğer Courseplay’i doğrudan yığını almaya yönlendirirseniz, araç yığını yüklemek için belirli bir konuma geçer.
-Ancak bu konumu çalışma ortamına uygun bulmazsanız, işi durdurup kolun pozisyonunu manuel olarak ayarlayabilir ve ardından sürücüyü yeniden başlatabilirsiniz.
+Ancak bu konumu çalışma ortamına uygun bulmazsanız, işi durdurup kolun pozisyonunu manuel olarak ayarlayabilir ve ardından şoförü yeniden başlatabilirsiniz.
 Courseplay ile otomatik boşaltma işleminin, yükleyicinin yönüyle aynı doğrultuda yapıldığını unutmayın. Boşaltıcının yükleyicinin yanından geçebilmesi için yeterli alanı olduğundan emin olun.
 "/>
     <text name="CP_help_page_siloLoaderBasic_text" text="
@@ -1030,7 +1030,7 @@ HUD'da işçi çalışırken yığın veya silonun kalan dolum seviyesi de gör�
 Yükleme hedefi bir bunker silosu ise, silonun yan duvarlarına çarpılmaması için çalışma genişliğinin ayarlanması gerekebilir.
 
 Yükseklik ofset ayarı, kepçenin yerden yüksekliğini ayarlamak için kullanılır, her kepçe için doğru bir şekilde hesaplanamayabilir.  
-Eğer kepçe yükleme işlemi için çok alçak kalıyorsa ve sürücü manevra yapamıyorsa ya da çok yüksek kalıyor ve ürün yere boşalıyorsa, bu ayarı kontrol etmelisiniz.
+Eğer kepçe, yükleme işlemi için çok alçakta kalıyorsa ve şoför manevra yapamıyorsa ya da çok yüksek kalıyor ve ürün yere dökülüyorsa, bu ayarı kontrol etmelisiniz.
 Ayar değiştirildiğinde kepçe otomatik olarak yükleme pozisyonuna hareket eder ve değişikliğin etkisini gösterir. 
 Ofseti sıfırlamak için HUD üzerindeki ayarlar metnine tıklamanız gerekir. Değer, +1 ile -1 arasında 0,1 hassaslıkta ayarlanabilir.
 
@@ -1062,7 +1062,10 @@ Seçimler tamamlandığında örnek görsele benzer bir görüntü olması gerek
     <text name="input_CP_DBG_CHANNEL_TOGGLE_CURRENT" text="CP: Geçerli hata ayıklama kanalını değiştir"/>
 	<text name="input_CP_DBG_CHANNEL_MENU_VISIBILITY" text="CP: Hata ayıklama kanalı menüsünü göster/gizle"/>
 	<text name="input_CP_OPEN_CLOSE_VEHICLE_SETTING_DISPLAY" text="CP: Mini arayüzü aç"/>
-	<text name="input_CP_START_STOP" text="CP: Sürücüyü başlat/durdur"/>
+	<text name="input_CP_START_STOP" text="CP: Şoförü başlat/durdur"/>
+	<text name="input_CP_START_STOP_AT_FIRST_WAYPOINT" text="CP: Şoförü başlat/durdur (başlangıç noktasından)"/>
+    <text name="input_CP_START_STOP_AT_NEAREST_WAYPOINT" text="CP: Şoförü başlat/durdur (en yakın yol noktasından)"/>
+    <text name="input_CP_START_STOP_AT_LAST_WAYPOINT" text="CP: Şoförü başlat/durdur (son geçilen yol noktasından)"/>
 	<text name="input_CP_GENERATE_COURSE" text="CP: Rota oluştur"/>
 	<text name="input_CP_CHANGE_SELECTED_JOB" text="CP: Seçili işi değiştir"/>
     <text name="input_CP_CHANGE_STARTING_POINT" text="CP: Başlangıç noktasını değiştir"/>
@@ -1074,5 +1077,6 @@ Seçimler tamamlandığında örnek görsele benzer bir görüntü olması gerek
     <text name="input_CP_OPEN_GLOBAL_SETTINGS" text="CP: Genel ayarları aç"/>
     <text name="input_CP_OPEN_COURSEGENERATOR_SETTINGS" text="CP: Rota oluşturucu/iş menüsünü aç"/>
     <text name="input_CP_OPEN_COURSEMANAGER" text="CP: Rota yöneticisini aç"/>
+	    <text name="input_CP_OPEN_INGAME_MENU" text="CP: Menüyü aç"/>
   </texts>
 </l10n>
